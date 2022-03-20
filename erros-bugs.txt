@@ -1,0 +1,29 @@
+Bugs e Erros:
+
+/o site possui 4 breakpoints
+
+/apenas a versão mobile funcionam corretamente
+
+/projeto em mobile first causou N problemas na versão desktop
+
+/algumas bordas/paddings nao estao alinhadas no wrapper principal (não sei nem se ele é necessario tho)
+
+/min-max-width em relação aos div causa problemas no h1 (visto no box1)
+/mesmo o h1 estando em um div separado
+
+/o logo principal não se move
+
+/header era para ser block, mas está em flex
+/e mesmo usando nth-child para mudar a ordem nao altera a dita /ordem
+
+/algumas funcionalidades vem de scripts em JS, foram ignoradas
+
+/dependendo do browser o site original possui versões diferentes
+
+/submenus ignorados, assim como menu responsivo baseado nele para versão mobile
+
+/box1 e box2 eram para ser apenas 1 box e na versão desktop seria rearranjado para flex em collumn
+
+/box1 texto não fica alinhado na versão 100% width
+
+/maioria das anchors não foram colocadas por irrelevancia momentanea
