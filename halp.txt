@@ -1,0 +1,23 @@
+bugs e erros:
+
+/o site possui 4 breakpoints
+apenas 2 funcionam razoavelmente
+
+/projeto em mobile first causou esse problema
+
+/algumas bordas/paddings nao estao alinhadas
+
+/min-max-width em relação aos div causa problemas no h1
+/mesmo o h1 estando em um div separado
+
+/o logo principal não se move
+
+/header era para ser block, mas está em flex
+/e mesmo usando nth-child para mudar a ordem nao altera a dita /ordem
+
+/algumas funcionalidades vem de scripts em JS, foram ignoradas
+
+/dependendo do browser o site original possui versões diferentes
+
+/submenus ignorados, assim como menu responsivo baseado nele para versão mobile
+
