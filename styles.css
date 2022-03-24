@@ -2,25 +2,99 @@
 *{
     list-style-type: none;
     text-decoration: none;
+ 
+
 }
-body{
-    margin: auto;
+html, body{
+    margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     box-sizing: border-box;
     line-height: 25.6px;
-    list-style-type: none;
     word-wrap: break-word;
     overflow-x: hidden;
+    width: 100%;
+
 }
 
+
 /* container */
-.container{
+.container-interior{
     padding-left: 24px;
     padding-right: 24px;
-    margin: auto;
-    max-width: 100%;
+    margin: 0;
+    width: 80%;
+    max-width: 1192px;
+}
+
+.container-interior-2{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1192px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container-interior-3{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1192px;
+    display: flex;
+}
+.container-interior-4
+{
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    margin: 0 auto;
+    max-width: 1192px;
+    width: 100%;
+}
+.container-avisos{
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-random{
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+    max-width: 1192px;
+    width: 100%;
+}
+.container-lalala{
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+}
+.socorro3{
+    display: flex;
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.socorro2{
+    display: flex;
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.socorro{
+    max-width: 1192px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* imagens */
@@ -31,6 +105,7 @@ img{
 
 /* considerar min-height pela flexibilidade */
 /* header */
+
 header.headermain{
     width: 100%;
     display: flex;
@@ -38,6 +113,10 @@ header.headermain{
     background-color: #fff;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 1192px;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
 
 }
 header.headermain .menu{
@@ -45,8 +124,7 @@ header.headermain .menu{
 }
 
 header.headermain .menu li{
-    padding-left: 24px;
-    padding-top: 20px;
+    padding-left: 24px;  
 }
 header.headermain .menu li a{
     color: black;
@@ -90,6 +168,29 @@ header.headermain .menu li a{
     padding-top: 12px;
 }
 
+#btn1{
+    
+    background-color: #fff;
+    border: 1px solid rgb(0, 112, 186);
+    box-sizing: border-box;
+    color: rgb(0, 112, 186);
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 0px;
+    margin-left: 9px;
+    max-width: 320px;
+    min-width: 84px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 11px;
+    text-align: center;
+
+}
 #btn-box1-2{
     
     background-color: #fff;
@@ -137,26 +238,21 @@ header.headermain .menu li a{
 }
 
 /* primeiro box */
-div.box1{
+div.container-exterior{
     background-color: #0f4083;
     color: #fff;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 72px;
     min-height: 450px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-content: center;
-    align-items: center;
-    margin-top: 0px;
-    width: 100%;
+    padding: 0;
     background: url('https://www.paypalobjects.com/marketing/web/br/home/debit-banner/banner-bg-new.jpg');
-    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-div.box1 h1{
+
+div.box1-texto h1{
     line-height: 36px;
     font-weight: 400;
 }
@@ -167,8 +263,6 @@ div.box2{
     color: #000;
     text-align: center;
     padding-bottom: 40px;
-    padding-left: 0px;
-    padding-right: 0px;
     padding-top: 40px; 
 }
 div.box2 p{
@@ -208,8 +302,6 @@ div.box3{
     background-color: #0d3685;
     text-align: center;
     padding-bottom: 30px;
-    padding-left: 0px;
-    padding-right: 0px;
     padding-top: 30px;
     
 }
@@ -238,11 +330,14 @@ div.box3 #btn-box3-1{
 div.box4{
     background-color: #fff;
     padding-bottom: 40px;
-    padding-left: 13px;
-    padding-right: 13px;
     padding-top: 40px;
     text-align: center;
+    display: flex;
+    max-height: 436px;
+    flex-wrap: wrap;
+
 }
+
 div.box4 .box4-btn-container{
     display:block;
 }
@@ -275,6 +370,10 @@ div.box4 #btn-box4-1,
 div.box5{
     background-color: #f5f7fa;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-height: 548px;
+    height: 100%;
 
 }
 div.box5 h2{
@@ -303,9 +402,7 @@ div.box5 #btn-box5-1,
     font-weight: 600;
     font-size: 15px;
 }
-/* div.box5 .random-container{
-    display: block;
-} */
+
 
 /* sexto box */
 div.box6{
@@ -313,9 +410,11 @@ div.box6{
     text-align: center;
     padding-bottom: 40px;
     padding-top: 40px;
-    padding-left: 13px;
-    padding-right: 13px;
+    display: flex;
+    max-height: 436px;
+    max-height: 100%;
 }
+
 div.box6 h2{
     color: #00A8EA;
 }
@@ -345,8 +444,6 @@ div.box7{
     background-color: #f5f7fa;
     text-align: center;
     padding-bottom: 40px;
-    padding-left: 13px;
-    padding-right: 13px;
     padding-top: 40px;
 
 }
@@ -365,14 +462,6 @@ div.box7 .box7-texto2-container{
     margin-right: 0px;
     margin-top: 0px;
     padding-top: 20px;
-}
-div.box7 #ampulheta{
-    max-height: 350px;
-    max-width: 90%;
-    text-align: center;
-    line-height: 25.6px;
-    box-sizing: border-box;
-    text-align: center;
 }
 div.box7 #btn-box7-1{
     text-align: center;
@@ -394,10 +483,8 @@ div.box7 #btn-box7-1{
 /* oitavo box */
 div.box8{
     background-color: #fff;
-    display: block;
+    display: flex;
     padding-bottom: 40px;
-    padding-left: 13px;
-    padding-right: 13px;
     padding-top: 40px;
     line-height: 25.6px;
     text-align: center;
@@ -405,11 +492,6 @@ div.box8{
 }
 div.box8 h2{
     color: #00A8EA;
-}
-div#casaco{
-    max-width: 90%;
-    max-height: 350px;
-    box-sizing: border-box;
 }
 div.box8 p{
     color: #000;
@@ -437,8 +519,7 @@ div.box9{
     background-color: #f5f7fa;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 0;
-    padding-right: 0;
+
 
 }
 div.box9 h2{
@@ -462,9 +543,6 @@ div.patrocinio-container{
     margin-right: -12px;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    flex-shrink: 1;
 }
 div.patrocinio-container #uber{
     height: 25px;
@@ -485,7 +563,7 @@ div.box10{
     color: #fff;
     padding-top: 40px;
     padding-bottom: 40px;
-    display: block;
+    display: flex;
     text-align: center;
 }
 div.box10texto{ 
@@ -515,6 +593,7 @@ div.box11{
     color: #fff;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin: 0 auto;
 }
 div.texto1, div.texto2, div.texto3, div.texto4, div.texto5,div.texto6{
     box-sizing: border-box;
@@ -540,10 +619,8 @@ div.texto5 #badge, div.texto3 #telemarketing{
 div.box12{
     background-color: #fff;
     color: #000;
-    display: block;
+    display: flex;
     padding-bottom: 40px;
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 40px;
     line-height: 25.6px;
 }
@@ -564,7 +641,7 @@ div.texto{
 footer.rodape{
     background-color: #fff;
     color: #687173;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     
 }
@@ -574,8 +651,6 @@ div.footer2{
     text-align: left;
     line-height: 22.4px;
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
     padding-bottom: 0;
     padding-top: 10px;
     text-decoration: none;
@@ -611,16 +686,30 @@ div.footer2 li{
 
 /* media queries */
    @media (max-width:576px){
+    
+    div.container-exterior{
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        text-align: center;
+    }
+
+    div.hidden{
+        display: none;
+    }
     header.headermain .menu{
         display: none;
     }
     header.headermain{
         display: flex;
-        align-content:center;
+        /* align-content:center;
         align-items:center;
-        justify-content: space-between;
+        justify-content: space-between; */
         flex-wrap: wrap;
     }
+
+
     #logop{
         background-image: url("https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg");
         background-position-x: 0%;
@@ -631,8 +720,62 @@ div.footer2 li{
         height: 30px;
         width: 26px;
     }
-   }
+    div.container-interior-2{
+        display: block;
+    }
+    div.box4{
+        max-height: 100%;
+    }
+    div.container-interior-3{
+        display: block;
+    }
+    div.box5{
+        max-height: 100%;
+    }
+    div.bo6{
+        max-height: 100%;
+    }
+    div.box7{
+        max-height: 100%;
+    }
+    div.box8{
+        max-height: 100%;
+    }
+    div.box9{
+        max-height: 100%;
+    }
+    div.box10{
+        max-height: 100%;
+    }
+    div.box12{
+        margin: 0 auto; 
+        max-height: 100%;
+    }
+    div.box11{
+        max-height: 100%;
+        display: block;
+    }
+    div.socorro{
+        display: block;
+    }
+    div.socorro2{
+        display: block;
+    }
+    div.socorro3{
+        display: block;
+    }
+    .headermain :nth-child(2){ order: 1;}
+    .headermain :nth-child(1){ order: 2;}
+    .headermain :nth-child(3){ order: 3;}
+    .headermain{
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+
    @media (min-width:752px) {
+
     header.headermain .menu{
         display: none;
     }
@@ -651,6 +794,7 @@ div.footer2 li{
     }
    }
    @media (min-width:1024px) {
+
     header.headermain .menu{
         display: none;
     }
@@ -670,8 +814,9 @@ div.footer2 li{
     }
    @media (min-width:1152px){
     
+    
     .container{
-        min-width: 100%;
+    min-width: 100%;
     }
     .container {
      max-width:1192px;
@@ -679,11 +824,11 @@ div.footer2 li{
     
     div.box1 h1{
         text-align: left;
-    
     }
     div.box2{
         background-color: #0f4083;
         color: #fff;
+        display: none;
     }
     div.box11{
         display: grid;
@@ -722,7 +867,7 @@ div.footer2 li{
         display: flex;
         align-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     header.headermain .menu{
@@ -735,5 +880,6 @@ div.footer2 li{
 
     header.headermain ul:nth-child(1){
         order: 2;        
+    }
     }
 }
