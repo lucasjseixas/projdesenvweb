@@ -199,7 +199,7 @@ header.headermain .menu li a{
     color: rgb(0, 112, 186);
     border-radius: 25px;
     cursor: pointer;
-    display: block;
+    display: none;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
@@ -235,6 +235,27 @@ header.headermain .menu li a{
     padding-top: 11px;
     text-align: right;
     align-content: center;
+}
+#btn-box1-2-hidden{
+    background-color: rgb(0, 112, 186);
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 0px;
+    margin-left: 9px;
+    max-width: 320px;
+    min-width: 84px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 11px;
+    text-align: center;
 }
 
 /* primeiro box */
@@ -725,6 +746,12 @@ div.footer2 li{
         flex-direction: row-reverse;
         margin-left: 5px;
     }
+    #btn-box1-2{
+        display: block;
+    }
+    #btn-box1-2-hidden{
+        display:none;
+    }
 
     #logop{
         background-image: url("https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg");
@@ -806,6 +833,9 @@ div.footer2 li{
     .container {
      max-width:1023px;
     }
+    #btn-box1-2-hidden{
+        display: none;
+    }
    }
    @media (min-width:1024px) {
 
@@ -825,6 +855,9 @@ div.footer2 li{
     .container {
      max-width:1151px;
      }
+    #btn-box1-2-hidden{
+        display: none;
+    }
     }
    @media (min-width:1152px){
     
@@ -858,6 +891,7 @@ div.footer2 li{
         top: 10px;
         right: -500px;
     }
+
     #logop{
         background-size: contain;
         box-sizing: border-box;
