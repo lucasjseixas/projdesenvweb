@@ -25,7 +25,7 @@
             <button id="btn-box1-1"><span id="burgao"></span>Menu</button>
         </div>
         <div class="botoes2">
-            <button id="btn-box1-2-hidden">Criar conta</button>
+            <button id="btn-box1-2-hidden">Entrar</button>
             <button id="btn-box1-2">Entrar</button>
         </div>
 </header>
@@ -293,6 +293,81 @@
         </ul>
         </div>
         </div>
+        <div class="containerlogin transform">
+            <div class="containerloginmain">
+                <div class="imagemlogin"><img src="https://www.paypalobjects.com/images/shared/momgram@2x.png">
+                </div>
+                <div id="msgerro"></div>
+                <div id="msgsuccesso"></div>
+                      <div class="label-float">
+                        <input type="text" id="user" placeholder="E-mail ou número de celular" required autocomplete="off"></input>
+                        <label id="labeluser" for="user"></label>
+                      </div>
+                      <div class="label-float">
+                        <input type="password" id="password" placeholder="Senha" autocomplete="off" required></input>
+                        <label id="labelpassword" for="password"></label>
+                      </div>
+                      <div class="buttonslogin">
+                        <div>
+                          <button id="buttonentrar">Login</button>
+                          <button onclick="sair()" id="buttonsair">Sair</button>
+                        </div>
+                      </div>
+                        <div class="buttonslogin">
+                         <button id="userlist">Usuários Cadastrados</button>
+                        </div>
+                      <div class="listadeusers">
+                      <ul id="listofusers"></ul>
+                      </div>
+                      <span id="fechar">Fechar</span>
+                      <div id="containerprocura">
+
+
+                      <button id="listadeatividades"><strong>Listar Atividade Aleatória</strong></button>
+
+                        <ul id="listofactivities"></ul>
+                        
+                        <p>:: Filtros de atividades ::</p>
+
+                        <label id="atividadeporchavelabel">
+                            Atividade por chave: </label>
+                            <input id="atividadeporchaveid" type="text" placeholder="Chave"></input>
+                            <button id="procurarporchave">Procurar por chave</button>
+                            <br><br>
+
+                        <label for="atividadeslabel">Escolha uma atividade:</label>
+                        <select id="atividadesmenuid" name="atividadesmenu">
+                          <option value="education">Education</option>
+                          <option value="recreation">Recreational</option>
+                          <option value="social">Social</option>
+                          <option value="diy">Diy</option>
+                          <option value="charity">Charity</option>
+                          <option value="cooking">Cooking</option>
+                          <option value="relaxation">Relaxation</option>
+                          <option value="music">Music</option>
+                          <option value="busywork">Busywork</option>
+                        </select>
+                        <button id="procurarportipo">Procurar por tipo</button>
+                        <br><br>
+
+                        <label id="atividadeporparticipanteslabel">
+                            Atividade por número de pessoas: </label>
+                            <input id="atividadeporparticipantesid" type="text" placeholder="Numero de participantes"></input>
+                            <button id="procurarporparticipantes">Procurar por pessoas</button>
+                            <br><br>
+
+                        <label id="atividadepeloprecolabel">
+                            Atividade pelo preço: </label>
+                            <input id="atividadepeloprecoid" type="text" placeholder="Preço da atividade"></input>
+                            <button id="procurarporpreco">Procurar por preço</button>
+
+                            <br><br>
+                            <button id="resetarpesquisa">Resetar pesquisa</button>
+
+                        </div>
+                    </div>
+            </div>
     </footer>
+    <script src="myscripts.js"></script>
 </body>
 </html>
