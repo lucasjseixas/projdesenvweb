@@ -804,8 +804,8 @@ input:focus{
 .label-float{
     position: relative;
     padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2px;
+    margin-bottom: 2px;
     transition: all .3s ease-out;
 }
   
