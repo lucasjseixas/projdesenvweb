@@ -181,7 +181,7 @@ document.querySelector("#listadeatividades").addEventListener("click", ()=>{
 
 document.getElementById("procurarporchave").addEventListener("click", ()=>{
   let atividadeporchaveid = document.getElementById("atividadeporchaveid");
-  fetch("http://www.boredapi.com/api/activity?key=" + atividadeporchaveid.value)
+  fetch("https://www.boredapi.com/api/activity?key=" + atividadeporchaveid.value)
   .then((resp) => resp.json())
   .then((resp)=>{
     let li = document.createElement("li");
@@ -195,7 +195,7 @@ document.getElementById("procurarporchave").addEventListener("click", ()=>{
 
 document.getElementById("procurarportipo").addEventListener("click", ()=>{
   let atividadesmenuid = document.getElementById("atividadesmenuid");
-  fetch("http://www.boredapi.com/api/activity?type=" + atividadesmenuid.value)
+  fetch("https://www.boredapi.com/api/activity?type=" + atividadesmenuid.value)
   .then((resp) => resp.json())
   .then((resp)=>{
     let li = document.createElement("li");
@@ -207,7 +207,7 @@ document.getElementById("procurarportipo").addEventListener("click", ()=>{
 
 document.getElementById("procurarporparticipantes").addEventListener("click", ()=>{
   let atividadeporparticipantesid = document.getElementById("atividadeporparticipantesid");
-  fetch("http://www.boredapi.com/api/activity?participants=" + atividadeporparticipantesid.value)
+  fetch("https://www.boredapi.com/api/activity?participants=" + atividadeporparticipantesid.value)
   .then((resp) => resp.json())
   .then((resp)=>{
     console.log(resp);
@@ -221,7 +221,7 @@ document.getElementById("procurarporparticipantes").addEventListener("click", ()
 
 document.getElementById("procurarporpreco").addEventListener("click", ()=>{
   let atividadepeloprecoid = document.getElementById("atividadepeloprecoid");
-  fetch("http://www.boredapi.com/api/activity?price=" + atividadepeloprecoid.value)
+  fetch("https://www.boredapi.com/api/activity?price=" + atividadepeloprecoid.value)
   .then((resp) => resp.json())
   .then((resp)=>{
     console.log(resp);
