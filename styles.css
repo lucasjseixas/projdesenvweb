@@ -845,18 +845,6 @@ input:focus{
 	display: block;
 }
 
-#resultadobusca{
-	
-	visibility: hidden;
-	transition: all 0.7s ease-in-out;
-	background-color: white;
-	color: black;
-	border-radius: 10px;
-	text-align: center;
-	border: 0.5px dotted black;
-	z-index: 22;
-	top: 500px;	
-}
 
 #buttonentrar, #userlist, #buttonsair, #listadeatividades, #criarconta{
     background-color: rgb(0, 112, 186);
@@ -917,10 +905,12 @@ input:focus{
 	visibility: hidden;
 	font-size: 0px;
 	display: block;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+	border-left: 5px solid rgb(56, 182, 224);
+	border-right: 5px solid rgb(56, 182, 224);
 	color: black;
 	transition: all 0.7s ease-in-out;
-	z-index: -1;
+	
 }
 #descricao{
 	font-size: 10px;

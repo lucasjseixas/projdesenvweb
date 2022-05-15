@@ -227,6 +227,7 @@ document.querySelector("#listadeatividades").addEventListener("click", ()=>{
         resultadobusca.style.fontSize = "17px";
         resultadobusca.innerHTML = "";
         resultadobusca.style.visibility = "visible";
+        resultadobusca.style.backgroundColor = "lightgrey";
         resultadobusca.innerHTML = 'Atividade aleatória: ' + d;
     })
 });
@@ -240,6 +241,7 @@ document.getElementById("procurarporchave").addEventListener("click", ()=>{
     resultadobusca.innerHTML = "";
     resultadobusca.style.fontSize = "17px";
     resultadobusca.style.visibility = "visible";
+    resultadobusca.style.backgroundColor = "lightgrey";
     resultadobusca.innerHTML = 'Atividade por chave: ' + d;
   })
   atividadeporchaveid.value = "";
@@ -255,6 +257,7 @@ document.getElementById("procurarportipo").addEventListener("click", ()=>{
     resultadobusca.innerHTML = "";
     resultadobusca.style.fontSize = "17px";
     resultadobusca.style.visibility = "visible";
+    resultadobusca.style.backgroundColor = "lightgrey";
     resultadobusca.innerHTML = 'Atividade por tipo: ' + d;
     })
 });
@@ -268,6 +271,7 @@ document.getElementById("procurarporparticipantes").addEventListener("click", ()
     resultadobusca.innerHTML = "";
     resultadobusca.style.fontSize = "17px";
     resultadobusca.style.visibility = "visible";
+    resultadobusca.style.backgroundColor = "lightgrey";
     resultadobusca.innerHTML = 'Atividade por pessoas: ' + d;
     })
     atividadeporparticipantesid.value = "";
@@ -282,6 +286,7 @@ document.getElementById("procurarporpreco").addEventListener("click", ()=>{
     resultadobusca.innerHTML = "";
     resultadobusca.style.fontSize = "17px";
     resultadobusca.style.visibility = "visible";
+    resultadobusca.style.backgroundColor = "lightgrey";
     resultadobusca.innerHTML = 'Atividade por preço: ' + d;
     })
     atividadepeloprecoid.value = "";
