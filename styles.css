@@ -834,6 +834,7 @@ input:focus{
     height: 10%;
     background-color: white;
     color: black;
+    font-size: 17px;
     border-radius: 10px;
     justify-content: center;
     transition: all 0.7s ease-in-out;
