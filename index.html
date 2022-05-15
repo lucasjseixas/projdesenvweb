@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></meta>
     <link rel="stylesheet" href="styles.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <title>Projeto01</title>
 </head>
 <body>
@@ -293,20 +296,23 @@
         </ul>
         </div>
         </div>
-        <div class="containerlogin transform">
+        <div class="containerlogin">
             <div class="containerloginmain">
                 <div class="imagemlogin"><img src="https://www.paypalobjects.com/images/shared/momgram@2x.png">
                 </div>
-                <div id="msgerro"></div>
-                <div id="msgsuccesso"></div>
+                <div id="msgalerta"></div>
+                <!-- <div id="msgerro"></div>
+                <div id="msgsuccesso"></div> -->
+                <div id="testediv">
                       <div class="label-float">
-                        <input type="text" id="user" placeholder="E-mail ou número de celular" required autocomplete="off"></input>
                         <label id="labeluser" for="user"></label>
+                        <input type="text" id="user" placeholder="E-mail ou número de celular" required autocomplete="off"></input>
                       </div>
                       <div class="label-float">
-                        <input type="password" id="password" placeholder="Senha" autocomplete="off" required></input>
                         <label id="labelpassword" for="password"></label>
+                        <input type="password" id="password" placeholder="Senha" autocomplete="off" required></input>
                       </div>
+                    </div>
                       <div class="buttonslogin">
                         <div>
                           <button id="buttonentrar">Login</button>
@@ -320,8 +326,8 @@
                       <ul id="listofusers"></ul>
                       </div>
                       <span id="fechar">Fechar</span>
-                      <div id="containerprocura">
 
+                      <div id="containerprocura">
 
                       <button id="listadeatividades"><strong>Listar Atividade Aleatória</strong></button>
 
@@ -332,6 +338,7 @@
                         <label id="atividadeporchavelabel">
                             Atividade por chave: </label>
                             <input id="atividadeporchaveid" type="text" placeholder="Chave"></input>
+                            <div id="descricao"><p>Um valor único. [1000000, 9999999]</p></div>
                             <button id="procurarporchave">Procurar por chave</button>
                             <br><br>
 
@@ -347,23 +354,27 @@
                           <option value="music">Music</option>
                           <option value="busywork">Busywork</option>
                         </select>
+                        <div id="descricao"><p>Tipo de atividade. ["recreacional, "social", ... ,"musica"]</p></div>
                         <button id="procurarportipo">Procurar por tipo</button>
                         <br><br>
 
                         <label id="atividadeporparticipanteslabel">
                             Atividade por número de pessoas: </label>
                             <input id="atividadeporparticipantesid" type="text" placeholder="Numero de participantes"></input>
+                            <div id="descricao"><p>O número de pessoas que podem ser envolvidas na atividade. [0, n]</p></div>
                             <button id="procurarporparticipantes">Procurar por pessoas</button>
                             <br><br>
 
                         <label id="atividadepeloprecolabel">
                             Atividade pelo preço: </label>
                             <input id="atividadepeloprecoid" type="text" placeholder="Preço da atividade"></input>
+                            <div id="descricao"><p>Fator descrevendo o valor do evento, sendo 0 para evento gratuito. [0, 1]</p></div>
                             <button id="procurarporpreco">Procurar por preço</button>
 
                             <br><br>
                             <button id="resetarpesquisa">Resetar pesquisa</button>
-
+                            
+                            <div id="resultadobusca"></div>
                         </div>
                     </div>
             </div>
