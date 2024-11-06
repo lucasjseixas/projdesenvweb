@@ -5,4 +5,4 @@
     <img src="https://skillicons.dev/icons?i=js,html,css,nodejs" />
   </a>
 </p>
-<p>Devido a falta de tempo na época não ouve tempo para finalização do projeto</p>
+<p>HTML e CSS OK. JS WiP</p>
